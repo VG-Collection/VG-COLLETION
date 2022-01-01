@@ -79,7 +79,7 @@ body {
   position: absolute;
   top: 100%;
   right: -100%;
-  height: calc(100vh - 9.5rem);
+  height: calc(100vh - 5rem);
   width: 25rem;
   background: #fff;
   padding: 0 1.5rem;
@@ -91,8 +91,7 @@ body {
 
 .header .paintings-container .painting {
   position: relative;
-  margin: 2rem 0;
-
+  margin: 1rem ;
   align-items: center;
   gap: 1.5rem;
 }
@@ -100,16 +99,17 @@ body {
 .header .paintings-container .painting .content a:hover {
   color: var(--main-color);
   border-bottom: 0.1rem solid var(--main-color);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0rem;
   text-decoration: none;
 }
 
 .header .paintings-container .painting img {
   width: auto;
   height: auto;
-  height: 7rem;
+  height: 5rem;
   box-shadow: #262527 2px 2px 2px;
   box-sizing: unset;
+  border-radius: 0%;
 }
 
 .header .paintings-container .painting .content a {
@@ -431,55 +431,30 @@ a {
   box-shadow: 2px 2px 2px 2px rgb(104, 93, 93);
   border-color: #5c250c;
 }
-@media (max-width: 768px) {
-  #menu-btn {
-    display: inline-block;
+
+
+@media (max-width:768px){
+
+  #menu-btn{
+      display: inline-block;
   }
 
-  .header .navbar {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    background: #fff;
-    width: 30rem;
-    height: calc(100vh - 9.5rem);
+  .header .navbar{
+      position: absolute;
+      top:100%; right: -100%;
+      background: #fff;
+      width: 30rem;
+      height: calc(100vh - 9.5rem);
   }
 
-  .header .navbar.active {
-    right: 0;
+  .header .navbar.active{
+      right:0;
   }
 
-  .header .navbar a {
-    color: var(--black);
-    display: block;
-    margin: 1.5rem;
-    padding: 0.5rem;
-    font-size: 2rem;
+  .header .navbar a{
+      color:var(--black);
+      display: block;
+      margin:1.5rem;
+      padding:0.5rem;
+      font-size: 2rem;
   }
-}
-@media (max-width: 768px) {
-  #menu-btn {
-    display: inline-block;
-  }
-
-  .header .navbar {
-    position: absolute;
-    top: 100%;
-    right: -100%;
-    background: #fff;
-    width: 30rem;
-    height: calc(100vh - 9.5rem);
-  }
-
-  .header .navbar.active {
-    right: 0;
-  }
-
-  .header .navbar a {
-    color: var(--black);
-    display: block;
-    margin: 1.5rem;
-    padding: 0.5rem;
-    font-size: 2rem;
-  }
-}
