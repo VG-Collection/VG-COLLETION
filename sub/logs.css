@@ -5,6 +5,8 @@
   --black: #000000;
   --bg: #ffffff;
   --border: 0.1rem solid rgba(204, 195, 195, 0.3);
+   user-select: none;
+
 }
 * {
   font-family: "Roboto", sans-serif;
